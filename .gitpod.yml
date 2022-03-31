@@ -1,0 +1,14 @@
+image: gitpod/workspace-full
+
+ports:
+- port: 3000
+  onOpen: open-preview
+
+tasks:
+- before: >
+    echo "starting..."
+  init: >
+    pnpm install
+  command: >
+    pnpm dev
+
